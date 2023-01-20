@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Tanvi Patwardhan - Personal Portfolio</title>
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Tanvi Patwardhan</span>
+                <span class="d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-1" src="{{url_for('static', filename='images/portfolio.jpg')}}" alt="Image" /></span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><u>About</u></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><u>Education</u></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><u>Experience</u></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications"><u>Certifications</u></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><u>Skills</u></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests"><u>Interests</u></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ url_for('contform') }}"><u>Get In Touch</u></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" id="logintab" href="{{ url_for('login') }}"><u>Login</u></a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        <span class="text-primary"><u>Tanvi Patwardhan</u></span>
+                    </h1>
+                    <div class="subheading mb-5" id="addr">
+                        P.0.1.5 Senghennydd Court, Salisbury Road, Cardiff CF24 4DS
+                        <br>
+                        <a href="mailto:name@email.com">tanvipatwardhan@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">Hey! I'm Tanvi and I'm a master's student in Cardiff University. Have a look at my portfolio and feel free to reach out to me by filling the Contact Form.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/tanvi-patwardhan-3857b0232/"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a class="social-icon" href="#!"><i class="fab fa-github"></i></a> -->
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>Cardiff University</u></h3>
+                            <div class="subheading mb-3">Msc Computing and IT Management <i>(Currently Pursuing)</i></div>
+                            <div>Relevant Modules: Compuational Thinking, Fundamentals of Programming, IT Management, Change and Innovation, Databases and Modelling</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-body">September 2022 - September 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>Brihan Maharashtra College of Commerce, Pune</u></h3>
+                            <div class="subheading mb-3">Bachelor of Business Administration(Computer Applications)</div>
+                            <div>Relevant Modules: C Programming, C++, Java, Principles of Management, Database Management System, Business Communication and Soft Skills, Cyber Security</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-body">June 2019 - June 2022</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>The Lexicon International School</u></h3>
+                            <div class="subheading mb-3">Grade 11 & 12 CBSE</div>
+                            <div>Relevant Modules: Economics, Business Studies, Accountancy, English, Informatics Practices</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-body">June 2017 - June 2019</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>Data Entry Intern</u></h3>
+                            <div class="subheading mb-3">Xanadutec Data Solutions Pvt Ltd</div>
+                            <p>I worked as a data entry intern at Xanadutec Data Solutions after my AISSE Grade 10 exams. Learnt to work on various types of data such as invoices, audio clips etc and varied processing methods for the data.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-body">May 2017</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>Website Development</u></h3>
+                            <p>I was part of a group project which involved a developing a website. We developed a website named Street Fleet which speciales in renting electric vehicles.It was developed using HTML, CSS, JavaScript and SQL. </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-body">December 2011 - March 2013</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Certifications-->
+            <section class="resume-section" id="certifications">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Certifications</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>Analytics Workshop</u></h3>
+                            <p>I was part of an Analytics Workshop during my final year of graduation. The modules of the worshop were Marketing Analytics which focused on various tools & tactics used in marketing; Business Analytics which consisted of analysing business strategies to determine the most effective and widely adopted ones; Data Analytics included classifying, managing and processing the enormous data available in today's times and also the various tools used for these tasks such as SPSS </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-body">April 2022</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>Digital Marketing</u></h3>
+                            <p>I completed an extra credit course in college on Digital Marketing. It focused on the 
+                                various means of digital marketing such as Amazon Affiliate Marketing.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-body">December 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>Stock Market</u></h3>
+                            <p>This extra credit course involved studying the market, researching various potential profitable stocks, important keywords and terms used in stock trading </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-body">January 2022</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>Money Basics</u></h3>
+                            <p>Participated in a workshop on Financial Awareness; concentrated on money basics where I learned about handling expenses, investment, and relevant significance</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-body">June 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>Camping/Excursion Volunteer</u></h3>
+                            <div class="subheading mb-3">Pugmarks Eco Tours Ltd</div>
+                            <p>Attended and completed a certified Volunteer Training Programme with Pugmarks Eco Tours Pvt. Ltd; became a volunteer to conduct summer camps, tours and outings for various age groups; learned about various adventure sports (such as ziplining, rapelling, kayaking), wildlife, compass reading, and map reading; attended basic first aid training</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-body">June 2017- January 2018</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>Programming Languages</u></h3>
+                                <ul>
+                                    <li> C </li>
+                                    <li> C++ </li>
+                                    <li> Java</li>
+                                     <li> Python</li>
+                                    <li> SQL</li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>IT</u></h3>
+                                <ul>
+                                    <li>Experienced file management; Microsoft Word, PowerPoint and Excel; web-based applications such as Mendeley; Turbo C, Visual Studio</li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>Communication</u></h3>
+                                <ul>
+                                    <li>Excellent verbal and written communication skills honed during BBA(CA), delivering presentations based on projects and assignments</li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><u>Collaboration & Leadership</u></h3>
+                                <ul>
+                                    <li>During BBA(CA), worked as a team to design and develop a website to rent vehicles, this included attending planning meetings, communicating over group messaging, ensuring completing all tasks and took time to give feedback on peers’ work to ensure we achieved a high mark. </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h2 class="mb-5">Interests</h2>
+                                <h5 class="mb-0"> A few things that interest me and help me refresh my mind are:</h5>
+                                <p>
+                                    <ul>
+                                        <li>Playing Golf</li>
+                                        <li>Trekking</li>
+                                        <li>Cooking</li>
+                                        <li>Baking</li>
+                                        <li>Reading Books</li>
+                                    </ul>
+                                </p>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <hr class="m-0" />
+        <!-- Bootstrap core JS-->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

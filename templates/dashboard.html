@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}" />
+    </head>  
+    <body id="page-top">
+     <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Tanvi Patwardhan</span>
+            <span class="d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-1" src="{{url_for('static', filename='images/portfolio.jpg')}}" alt="Image" /></span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" id="logouttab" href="{{ url_for('login') }}"><u>Logout</u></a></li>
+            </ul>
+        </div>
+        
+    </nav>
+
+     <!-- Contact Data Table-->
+        <div class="container-fluid">
+            <h2 align="center" class="mb-5">Contact Data</h2>  
+            <table class="datatable" align="center" border=5 >  
+                <thead>  
+                    <td>ID</td>  
+                    <td>Name</td>  
+                    <td>Email</td>  
+                    <td>Message</td> 
+                </thead>  
+              
+                {% for row in rows %}  
+                    <tr class="tablerow">
+                        <td>{{row["id"]}}</td>  
+                        <td>{{row["name"]}}</td>  
+                        <td>{{row["email_id"]}}</td>  
+                        <td>{{row["message"]}}</td>  
+                    </tr>  
+                {% endfor %}  
+            </table>    
+        </div> 
+    </body>
+</html>

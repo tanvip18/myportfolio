@@ -1,8 +1,24 @@
-Web Application Development- Personal Portfolio
+# Web Application Development- Personal Portfolio
 
-Student Number: c22093111
+# Student Number: c22093111
 
-References:
+# OpenShift Link
+
+
+## How to run on Localhost
+
+Windows / VSCode for Windows - CMD
+
+```
+pip install virtualenv
+virtualenv env 
+env\Scripts\activate.bat
+pip install flask
+flask run
+```
+
+
+# References:
 
 Get Started with Bootstrap(no date). Available at: https://getbootstrap.com/docs/5.3/getting-started/introduction/ (Accessed: 13 January 2023).
 Flask SQLite Database (no date). Available at: https://pythonbasics.org/flask-sqlite/ (Accessed: 18 January 2023).
